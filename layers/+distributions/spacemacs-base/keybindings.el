@@ -183,7 +183,7 @@
   "fl" 'find-file-literally
   "fE" 'spacemacs/sudo-edit
   "fo" 'spacemacs/open-file-or-directory-in-external-app
-  "fR" 'spacemacs/rename-current-buffer-file
+  "fr" 'spacemacs/rename-current-buffer-file
   "fS" 'evil-write-all
   "fs" 'save-buffer
   "fvd" 'add-dir-local-variable
@@ -403,7 +403,7 @@
   "wu"  'winner-undo
   "wv"  'split-window-right
   "wV"  'split-window-right-and-focus
-  "ww"  'other-window
+  "wW"  'other-window
   "w/"  'split-window-right
   "w="  'balance-windows
   "w+"  'spacemacs/window-layout-toggle
