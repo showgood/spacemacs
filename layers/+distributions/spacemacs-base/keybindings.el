@@ -126,6 +126,7 @@
   "bN"    'spacemacs/new-empty-buffer
   "bP"    'spacemacs/copy-clipboard-to-whole-buffer
   "bp"    'previous-buffer
+  "bk"    'kill-this-buffer
   "bR"    'spacemacs/safe-revert-buffer
   "bs"    'spacemacs/switch-to-scratch-buffer
   "bY"    'spacemacs/copy-whole-buffer-to-clipboard

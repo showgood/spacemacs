@@ -52,12 +52,12 @@
     :defer t
     :init
     (progn
-      (spacemacs/declare-prefix "gl" "links")
+      (spacemacs/declare-prefix "gL" "links")
       (spacemacs/set-leader-keys
-        "gll" 'spacemacs/git-link
-        "glL" 'spacemacs/git-link-copy-url-only
-        "glc" 'spacemacs/git-link-commit
-        "glC" 'spacemacs/git-link-commit-copy-url-only)
+        "gLl" 'spacemacs/git-link
+        "gLL" 'spacemacs/git-link-copy-url-only
+        "gLc" 'spacemacs/git-link-commit
+        "gLC" 'spacemacs/git-link-commit-copy-url-only)
       ;; default is to open the generated link
       (setq git-link-open-in-browser t))))
 
@@ -123,10 +123,11 @@
         (setenv "GIT_ASKPASS" "git-gui--askpass"))
       ;; key bindings
       (spacemacs/declare-prefix "gd" "diff")
-      (spacemacs/declare-prefix "gf" "file")
+      (spacemacs/declare-prefix "gF" "file")
       (spacemacs/set-leader-keys
         "gb"  'spacemacs/git-blame-micro-state
-        "gfh" 'magit-log-buffer-file
+        "gFh" 'magit-log-buffer-file
+        "gl"  'magit-log-buffer-file
         "gm"  'magit-dispatch-popup
         "gs"  'magit-status
         "gS"  'magit-stage-file

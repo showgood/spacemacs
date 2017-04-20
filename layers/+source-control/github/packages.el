@@ -30,13 +30,13 @@
         "f" 'gist-fetch-current
         "K" 'gist-kill-current
         "o" 'gist-browse-current-url)
-      (spacemacs/declare-prefix "gg" "github gist")
+      (spacemacs/declare-prefix "gG" "github gist")
       (spacemacs/set-leader-keys
-        "ggb" 'gist-buffer
-        "ggB" 'gist-buffer-private
-        "ggl" 'gist-list
-        "ggr" 'gist-region
-        "ggR" 'gist-region-private))))
+        "gGb" 'gist-buffer
+        "gGB" 'gist-buffer-private
+        "gGl" 'gist-list
+        "gGr" 'gist-region
+        "gGR" 'gist-region-private))))
 
 (defun github/init-github-browse-file ()
   (use-package github-browse-file

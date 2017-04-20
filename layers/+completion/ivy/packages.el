@@ -153,6 +153,8 @@
         "a'" 'spacemacs/ivy-available-repls
         "fR" 'counsel-recentf
         "rl" 'ivy-resume
+        "gg" 'counsel-git-grep
+        "gf" 'counsel-git
         "bb" 'ivy-switch-buffer)
 
       ;; custom actions for recentf
