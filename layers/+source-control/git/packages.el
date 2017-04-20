@@ -122,11 +122,12 @@
       (when (eq window-system 'w32)
         (setenv "GIT_ASKPASS" "git-gui--askpass"))
       ;; key bindings
-      (spacemacs/declare-prefix "gd" "diff")
+      ;; (spacemacs/declare-prefix "gd" "diff")
       (spacemacs/declare-prefix "gF" "file")
       (spacemacs/set-leader-keys
         "gb"  'spacemacs/git-blame-micro-state
         "gFh" 'magit-log-buffer-file
+        "gd"  'magit-diff-buffer-file
         "gl"  'magit-log-buffer-file
         "gm"  'magit-dispatch-popup
         "gs"  'magit-status

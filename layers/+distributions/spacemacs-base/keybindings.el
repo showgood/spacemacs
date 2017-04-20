@@ -172,7 +172,7 @@
 ;; file -----------------------------------------------------------------------
 (spacemacs/set-leader-keys
   "fc" 'spacemacs/copy-file
-  "fD" 'spacemacs/delete-current-buffer-file
+  "fd" 'spacemacs/delete-current-buffer-file
   "fei" 'spacemacs/find-user-init-file
   "fed" 'spacemacs/find-dotfile
   "feD" 'spacemacs/ediff-dotfile-and-template
@@ -182,6 +182,7 @@
   "fCu" 'spacemacs/dos2unix
   "fg" 'rgrep
   "fl" 'find-file-literally
+  "fn" 'cp-filename-of-current-buffer
   "fE" 'spacemacs/sudo-edit
   "fo" 'spacemacs/open-file-or-directory-in-external-app
   "fr" 'spacemacs/rename-current-buffer-file
@@ -190,7 +191,7 @@
   "fvd" 'add-dir-local-variable
   "fvf" 'add-file-local-variable
   "fvp" 'add-file-local-variable-prop-line
-  "fy" 'spacemacs/show-and-copy-buffer-filename)
+  "fp" 'spacemacs/show-and-copy-buffer-filename)
 ;; help -----------------------------------------------------------------------
 (spacemacs/set-leader-keys
   "hdb" 'describe-bindings
@@ -397,7 +398,7 @@
   "wo"  'other-frame
   "wr"  'spacemacs/rotate-windows-forward
   "wR"  'spacemacs/rotate-windows-backward
-  "ws"  'split-window-below
+  ;; "ws"  'split-window-below
   "wS"  'split-window-below-and-focus
   "w-"  'split-window-below
   "wU"  'winner-redo
@@ -535,7 +536,7 @@
   :doc (concat "
  Select^^^^               Move^^^^              Split^^               Resize^^             Other^^
  ──────^^^^─────────────  ────^^^^────────────  ─────^^─────────────  ──────^^───────────  ─────^^──────────────────
- [_j_/_k_]  down/up       [_J_/_K_] down/up     [_s_] vertical        [_[_] shrink horiz   [_u_] restore prev layout
+ [_j_/_k_]  down/up       [_J_/_K_] down/up     [_-_] vertical        [_[_] shrink horiz   [_u_] restore prev layout
  [_h_/_l_]  left/right    [_H_/_L_] left/right  [_S_] verti & follow  [_]_] enlarge horiz  [_U_] restore next layout
  [_0_.._9_] window 0..9   [_r_]^^   rotate fwd  [_v_] horizontal      [_{_] shrink verti   [_d_] close current
  [_w_]^^    other window  [_R_]^^   rotate bwd  [_V_] horiz & follow  [_}_] enlarge verti  [_D_] close other
@@ -583,7 +584,7 @@
   ("o" other-frame)
   ("r" spacemacs/rotate-windows-forward)
   ("R" spacemacs/rotate-windows-backward)
-  ("s" split-window-below)
+  ;; ("S" split-window-below)
   ("S" split-window-below-and-focus)
   ("u" winner-undo)
   ("U" winner-redo)
