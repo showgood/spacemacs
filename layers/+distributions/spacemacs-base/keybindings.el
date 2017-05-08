@@ -368,7 +368,10 @@
     (golden-ratio)))
 
 (spacemacs/set-leader-keys
-  "w TAB"  'spacemacs/alternate-window
+  ;; my-notes: spacemacs/alternate-window doesn't work when
+  ;; windows are located on two frames
+  ;; "w TAB"  'spacemacs/alternate-window
+  "w TAB"  'aw-flip-window
   "w2"  'spacemacs/layout-double-columns
   "w3"  'spacemacs/layout-triple-columns
   "wb"  'spacemacs/switch-to-minibuffer-window
